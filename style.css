@@ -4,11 +4,23 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: sans-serif;
+   scroll-snap-type: none;
 }
 hr{
     margin: 20px;
     width: 60%;
    margin-left: -0;
+}
+*::-webkit-scrollbar{
+    width: 10px;
+
+}
+*::-webkit-scrollbar-track{
+    border-radius: 10px;
+}
+*::-webkit-scrollbar-thumb{
+    border-radius: 35px;
+    background: #0ef;
 }
 body , html{
     height: 100vh;
@@ -16,6 +28,10 @@ body , html{
     background-color: #1f242d;
     color: white;
     scroll-behavior: smooth;
+    -webkit-scrollbar{
+        width: 10px;
+        color: red;
+    }
 }
 section{
     min-height: 100vh;
@@ -23,6 +39,16 @@ section{
 }
 span{
     color: #0ef;
+}
+#crusr{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transform: translate(50%, -20%);
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 999;
 }
 .active{
     color: #0ef;
