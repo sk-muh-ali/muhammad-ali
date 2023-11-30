@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
    scroll-snap-type: none;
+   cursor: none;
 }
 hr{
     margin: 20px;
@@ -35,7 +36,7 @@ body , html{
 }
 section{
     min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    padding: 10rem 6% 2rem;
 }
 span{
     color: #0ef;
@@ -311,18 +312,105 @@ span{
     font-size: 1.5rem;
     margin: 2rem 0 3rem;
 }
-.skil-tital{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 90px;
+.skill{
+    min-height: auto;
+    padding-bottom: 7rem;
+    background-color: #1f242d;
 }
-.skil-tital h2{
-    text-align: center;
-    font-size: 3.2rem;
+.skill .skill-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.skill-column .title{
+    font-size: 2.5rem;
+    margin: 5.9rem 0 1.5rem;
+}
+.skill-row .skill-column{
+    flex: 1 1 30rem;
+}
+.skill-box .skill-content{
+    position: relative;
+    border: .2rem solid rgb(21, 198, 211);
+    border-radius: .6rem;
+    padding: .5rem 1.5rem;
+}
+.skill-content .progress{
+    padding: 1rem 0;
+}
+.skill-content .progress h3{
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+.skill-content .progress h3 span{
     color: #0ef;
 }
-
+.skill-content .progress .bar{
+    height: 2.5rem;
+    border-radius: .6rem;
+    border: .2rem solid #0ef;
+    padding: .5rem;
+    margin: 1rem 0;
+}
+.skill-content .progress .bar span{
+    display: block;
+    height: 100%;
+    background: #0ef;
+    border-radius: .3rem;
+}
+.skill-column:nth-child(1) .skill-content .progress:nth-child(1) .bar span{
+    width: 85%;
+}
+.skill-column:nth-child(1) .skill-content .progress:nth-child(2) .bar span{
+    width: 62%;
+}
+.skill-column:nth-child(1) .skill-content .progress:nth-child(3) .bar span{
+    width: 75%;
+}
+.skill-column:nth-child(1) .skill-content .progress:nth-child(4) .bar span{
+    width: 68%;
+}
+.skill-column:nth-child(2) .skill-content .progress:nth-child(1) .bar span{
+    width: 90%;
+}
+.skill-column:nth-child(2) .skill-content .progress:nth-child(2) .bar span{
+    width: 75%;
+}
+.skill-column:nth-child(2) .skill-content .progress:nth-child(3) .bar span{
+    width: 45%;
+}
+.skill-column:nth-child(2) .skill-content .progress:nth-child(4) .bar span{
+    width: 65%;
+}
+.skill-box .skill-content{
+    position: relative;
+    border: .2rem solid #0ef;
+    border-radius: .5rem 1.5rem;
+    z-index: 1;
+    overflow: hidden;
+}
+.skill-box .skill-content::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(22, 114, 121, 0.444);
+    z-index: -1;
+    transition: .5s all ease;
+}
+.skill-box .skill-content:hover{
+    box-shadow: 0 0 1rem #0ef;
+}
+.skill-box .skill-content:hover::before{
+    width: 100%;
+    box-shadow: 0 0 1rem #0ef;
+}
+.skill-content:hover .progress .bar span{
+    box-shadow: 0 0 1rem #0ef;
+}
 .services h2{
     margin-bottom: 5rem;
 }
@@ -352,11 +440,12 @@ span{
     color: #0ef;
 }
 .services-box h3{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 .services-box p{
     font-size: 1rem;
     margin: 1rem 0 3rem;
+    line-height: 25px;
 }
 .contect h2{
     margin-bottom: 3rem;
@@ -381,6 +470,8 @@ span{
     background: #323946;
     border-radius: .8rem;
     margin: .7rem 0;
+    outline: none;
+    border: none;
 }
 .contect form .input-box input{
     width: 49%;
