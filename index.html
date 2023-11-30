@@ -2,29 +2,29 @@
 <html lang="en">
 
 <head>
+    <!-- charset -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link -->
     <link rel="stylesheet" href="style.css">
-
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="img/home.png" type="image/x-icon">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
         ScrollReveal({ reset: true });
     </script>
-    <title>Muhammad Ali: Portfolio-By-Ali</title>
+    <title>Muhammad Ali: Portfolio</title>
+    <meta name="description" content="Muhammad Ali: Portfolio-By-muhammad ali">
     <meta http-equiv="X-UA-Compatible" content="Muhammad Ali: Portfolio-By-Ali">
     <meta name="keywords"
-        content="portfolio, muhammad ali portfolio, Muhammad-Ali portfolio, ali ka portfolio, Portfolio-By-Ali, aptech ali portfolio">
+        content="portfolio, muhammad ali portfolio, Muhammad-Ali portfolio, ali ka portfolio, Portfolio-By-Ali, aptech ali portfolio, personal portfolio, personal portfolio karachi in pakistan, portfolio in pakistan, ">
     <meta property="og:site_name" content="Muhammad Ali portfolio">
     <meta property="og:site_name" content="portfolio">
     <meta property="og:site_name" content="en_us">
     <meta name="google-site-verification" content="4hTu3F5g6VwKkKycYqdPhel5cwE_Qk_RAIYdLcJMoGI" />
     <meta name="robots" content="ALL, FOLLOW,INDEX" />
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="description" content="Muhammad Ali: Portfolio-By-Ali">
-
-    <link rel="shortcut icon" href="img/home.png" type="image/x-icon">
 </head>
 
 <body>
@@ -76,15 +76,70 @@
         </div>
     </section>
     <!-- skills section design -->
+    <section class="skill" id="skill">
+        <h2 class="headding">My <span>Skills</span></h2>
+        <div class="skill-row">
+
+            <div class="skill-column">
+                <h3 class="title"><span>Soft</span> Skills</h3>
+
+                <div class="skill-box">
+                    <div class="skill-content">
+                        <div class="progress">
+                            <h3>Graphic Designer<span id="show">85%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Ms Excal-onenote<span id="show">62%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Ms Word-Powerpoint<span id="show">75%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>UI & UX Designer<span id="show">68%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-column">
+                <h3 class="title"><span>Professional</span> Skills</h3>
+                <div class="skill-box">
+                    <div class="skill-content">
+                        <div class="progress">
+                            <h3>HTML <span id="show">90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>CSS<span id="show">75%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>JavaScript<span id="show">45%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Jquery-Gsap<span id="show">65%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
     <section class="services" id="services">
         <h2 class="headding">our <span>services</span></h2>
         <div class="services-container">
             <div class="services-box">
                 <i class='bx bx-code-alt'></i>
                 <h3>Web Development</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit aut
-                    quo ullam deleniti!
-                    Blanditiis accusantium earum expedita culpa, pariatur facilis.
+                <p>Creating the user interface (UI) that users interact with directly.
+                    Using technologies such as HTML, CSS, and JavaScript to build responsive and visually appealing
+                    websites.
                 </p>
                 <a href="" class="btn">Read More</a>
 
@@ -92,20 +147,20 @@
 
             <div class="services-box">
                 <i class='bx bx-paint-roll'></i>
-                <h3>UL & UI Developer</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit aut
-                    quo ullam deleniti!
-                    Blanditiis accusantium earum expedita culpa, pariatur facilis.s</p>
+                <h3>UI & UX Developer</h3>
+                <p>Crafting visually appealing and intuitive user interfaces.
+                    Creating and implementing design systems for consistency across the application.
+                    Utilizing tools like Adobe XD, Sketch, Figma, or other UI design software.</p>
                 <a href="" class="btn">Read More</a>
 
             </div>
 
             <div class="services-box">
-                <i class='bx bx-bar-chart-alt'></i>
-                <h3>Digital Marketing</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit aut
-                    quo ullam deleniti!
-                    Blanditiis accusantium earum expedita culpa, pariatur facilis.
+                <i class='bx bx-paint'></i>
+                <h3>Graphic Designer</h3>
+                <p>Graphic design services encompass the creation of visual content for various purposes, including
+                    branding, marketing, and communication. If you're providing graphic design services, here are some
+                    key offerings and responsibilities:
                 </p>
                 <a href="" class="btn">Read More</a>
             </div>
@@ -114,16 +169,16 @@
     <section class="contect" id="contect">
         <h2 class="headding">Contect <span>Me!</span></h2>
 
-        <form>
+        <form onclick="sendemail(); reset(); return false;">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
+                <input type="text" placeholder="Full Name" id="name">
                 <input type="email" placeholder="Email Adress" id="gmail">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="contect number">
-                <input type="text" placeholder="Email Subject">
+                <input type="number" placeholder="contect number" id="number">
+                <input type="text" placeholder="Email Subject" id="email">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
             <input type="submit" value="Send message" class="btn">
         </form>
     </section>
@@ -135,9 +190,10 @@
             <a href="#home"><i class='bx bxs-arrow-from-bottom'></i></a>
         </div>
     </footer>
-    <script src="java.js"></script>
-    <script src="script.js"></script>
-    <script src="skill.js"></script>
-    <script src="scroll.js"></script>
 </body>
+<script src="java.js"></script>
+<script src="script.js"></script>
+<script src="skill.js"></script>
+<script src="scroll.js"></script>
+
 </html>
